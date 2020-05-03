@@ -1,10 +1,122 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Resume Profile</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 <body>
-      <h1>Resume Profile</h1>
+     <br>
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="card card-body h-100 border-info" id="profile-wrapper">
+                     <img id="profile-pic" src="{% static 'images/saikrishnap.jpg' %}">
+                     <hr>
+                     <h4>Hi I'm Sai Krishna</h4><br>
+                     <ul>
+                         <li><img class="social" src="{% static 'images/gmail.png' %}"> saikrishnap29@gmail.com</li>
+                         <li><img class="social" src="{% static 'images/phone.png' %}"> 9866351219</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="col-md-8">
+                 <div class="card card-body h-100 border-info">
+                     <h4>RESUME HEADLINE</h4>
+                     <hr>
+                     <p>I am B.Tech Graduate and I have 4 months experience in Python and 1 month experience in
+                         Django framework and also I know XML, CSS, JSON, Database, and SQL queries GitHub.
+                         Looking to work as a software engineer.Passionate professional great interpersonal
+                         and communication skills</p><br>
+                     <p>Click on GitHub image to see my GitHub Profile    : <a href="https://github.com/saikrishnap29">
+                         <img src="{% static 'images/github.png' %}" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a></p>
+                     <p>Click on linkedin image to see my linkedin Profile  : <a href="https://www.linkedin.com/in/p-sai-krishina-45314b1a4/">
+                         <img src="{% static 'images/linkedin.png' %}" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a></p>
+                 </div>
+             </div>
+         </div>
+         <br>
+         <div class="row">
+             <div class="col-md-9">
+                 <div class="card card-body h-100 border-info">
+                     <h4>PROJECT  DETAILS </h4>
+                     <hr>
+                     <h5>E-commerce website :</h5>
+                     <p>The Main objective of the Project is to make CRUD operations
+                               in that and also to provide basic structure for the website by
+                               using Python,Django,HTML,CSS,POSTGRESQL etc.</p>
+                     <h5>Resume Profile :</h5>
+                     <p>The Main objective of the Project is to show the static webpage
+                                of a candidate's resume profile which covers all fields of the
+                                Person created by using Python,Django,HTML,CSS etc.</p>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <div class="card card-body h-100 border-info">
+                     <h4>TECHNICAL SKILLS</h4>
+                     <hr>
+                     <ul class="social-links">
+                         <li>1. Python</li><br>
+                         <li>2. Django</li><br>
+                         <li>3. HTML</li><br>
+                         <li>4. CSS</li><br>
+                         <li>5. JSON</li><br>
+                         <li>6. Postgresql</li><br>
+                         <li>7. GitHub</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         <br>
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="card card-body border-info h-100">
+                     <h4>EDUCATION</h4>
+                     <hr>
+                     <p>B.Tech - Mechanical Engineering - 76% - (2015-2019)</p>
+                     <hr>
+                     <p>Inter Mediate- MPC - 88.2% - (2013-2015)</p>
+                     <hr>
+                     <p>SSC - 8.3(GPA) - 2013</p>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="card card-body border-info h-100">
+                     <h4>PROFILE SUMMARY</h4>
+                     <hr>
+                     <p>Looking to start the career as an entry-level software engineer with a reputed firm
+                         driven by technology. I am Strong in design and integration with intuitive problem
+                         solving skills. Proficient in Python, Django and Mysql. Passionate about implementing
+                         and launching new projects. Ability to translate business requirements into technical
+                         solutions.</p>
+                  </div>
+             </div>
+         </div>
+         <br>
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="card card-body border-info h-100">
+                     <h4>PERSONAL DETAILS</h4>
+                     <hr>
+                     <p><strong>Name</strong> : P. Sai Krishna</p>
+                     <p><strong>University Reg no</strong> : 153N1A1337 (JNTUA)</p>
+                     <p><strong>Father’s Name </strong> : P.Obulesu</p>
+                     <p><strong>Date of Birth </strong> : 10-06-1998</p>
+                     <p><strong>Languages known </strong> : English, Telugu</p>
+                     <p><strong>Present Address </strong> :  OM Residency, 4th Cross, Vinayak Nagar, Murgesh Palya,
+                                                           Bengaluru, Karnataka,
+                                                          PIN code-560017.</p>
+                     <p><strong>Permanent Address </strong>  : Door no: 6-2-501, Coca cola godown street,
+                                                          Kovur Nagar, Anantapur, Andhra Pradesh ,
+                                                          PIN code-515001.</p>
+                     <p><strong>Phone No </strong> : 9866351219, 9959944170</p>
+                 </div>
+             </div>
+         </div>
+     </div>
 </body>
 </html>
